@@ -1,0 +1,26 @@
+
+{
+        "name": "tbDEX Wallet",
+        "version": "1.0.0",
+        "description": "Securely manage your digital assets and identities",
+        "main": "index.js",
+        "scripts": {
+          "start": "node index.js",
+          "build": "npm run compile",
+          "compile": "babel src -d lib"
+        },
+        "keywords": [],
+        "author": "John Babatunde Lee",
+        "license": "MIT",
+        "dependencies": {
+          "@tbdex/http-client": "^1.1.0",
+          "@web5/credential": "^1.0.3",
+          "@web5/dids": "^1.1.1"
+        },
+        "devDependencies": {
+          "@babel/cli": "^7.12.10",
+          "@babel/core": "^7.12.10"
+        }
+      }
+      
+      
