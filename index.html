@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>tbDEX Wallet</title>
+  <style>
+    /* Add some basic styling */
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f0f0f0;
+    }
+    #root {
+      max-width: 800px;
+      margin: 40px auto;
+      padding: 20px;
+      background-color: #fff;
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+  </style>
+</head>
+<body>
+  <div id="root">
+    <h1>Welcome to tbDEX Wallet</h1>
+    <p>Login</p>
+    <form>
+      <input type="email" placeholder="Email" />
+      <input type="password" placeholder="Password" />
+      <button type="submit">Login</button>
+    </form>
+    <p>Create a Free Account</p>
+    <button>Sign Up</button>
+    <p>Forget Password?</p>
+    <button>Reset Password</button>
+  </div>
+  <script>
+    // Check if the 'root' element exists
+    if (!document.getElementById('root')) {
+      console.error('Root element not found');
+    } else {
+      // Load the index.js file
+      const script = document.createElement('script');
+      script.src = 'index.js';
+      document.body.appendChild(script);
+    }
+  </script>
+</body>
+</html>
